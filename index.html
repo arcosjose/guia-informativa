@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos para mejorar en Clash Royale</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <div class="contenedor">
+        <main class="contenido">
+            <h1>Consejos para mejorar en Clash Royale</h1>
+            <p>Esta pequeña guía va dirigida a gente que recién arranca o está estancada en una cierta cantidad de medallas o trofeos. En esta guía aprenderás como gestionar mejor tus recursos, como mejorar la toma de decisiones en una partida y como apirar a llegar al top mundial o romper tu record de trofeos</p>
+
+            <h2>1. Mejora la gestión de tus recursos</h2>
+            <p>Seguramente una de las razones por las que estás estancado en ladder o camino de leyendas es por tu nivel de cartas. Tienes tu mazo con cartas al 13, otras al 10 y ya con un poco de suerte tienes alguna que otra carta maxeada. Esto se puede solucionar centrandote en un solo mazo en lugar de querer mejorar todas de golpe, de nada te sirve gastar tu oro, comodínes y demás recursos mejorando una carta que no usas cuando bien podrías usarlos en una carta que tienes en tu mazo y que te gusta mucho. Así que en resumen, centrate en mejorar un solo mazo.</p>
+            <p>Este consejo igual aplica con las evoluciones y heroes, solo gasta tus comodínes en evoluciones y heroes que uses en tu mazo.</p>
+            
+            <h2>2. Escoje un mazo que te guste y que sea bueno</h2>
+            <p>Apuesto a que has tratado de crear tu propio mazo para diferenciarte de los demás y creer que eres el próximo Mohamed Light, peeero ese es uno de los errores que muy probablemente te tenga estancado. Es muy poca la gente que logra llegar al top con un mazo propio, entonces si ya no quieres sufrir suelta tu mazo de cagada y esocoje algún estilo de mazo que te guste y te llame la atención para cambiar de mazo, te aseguro que de esta forma mejorarás buena parte de tus errores y romperás tu record de medallas o trófeos. En la pestaña "Recursos adicionales" tendrás algunos mazos que te recomiendo y te podrían gustar.</p>
+            <p>Solo escoje un mazo que sea bueno, que te guste y juega muchas partidas con el, la única forma de ser bueno en algo es prácticando.</p>
+            <p>Igual puedes consultar más mazos y para diferentes modos de juego en <a href="https://royaleapi.com/">RoyaleApi</a></p>
+
+            <h2>3. Se inteligente en tus partidas</h2>
+            <p>Si tu rival se ha gastado un megacaballero, unos bats al puente y encima tu torre está a 10000 de vida, mejor ahorrate ese elixir en armarle un push por la otra linea y así empatar la partida. Igual cuida tu posicionamientos de tus cartas, algo que puede ayudarte bastante a mejorar es mejorar las posiciones de tus cartas, fijate en como posicionan sus cartas los pros y trata de imitarlo, te aseguro que depués de eso aunmentarás tu tasa de victoria.</p>
+            
+            <figure>
+                <video title="Video de muestra de un buen posicionamiento de cartas" autoplay muted loop width="640" height="360" controls>
+                    <source src="video/ejemplo.mp4" type="video/mp4">    
+                </video>
+                <figcaption>Breve demostración de un buen posicionamiento de cartas</figcaption>
+            </figure>
+
+            <h2>4. Juega sin miedo y contra los mejores</h2>
+            <p>Si de verdad quieres ser bueno juega gran desafío, en gran desafío están los jugadores top jugando, esa es una buena oportunidad para ti para que te cales con gente que de verdad sabe jugar. Si te toca contra alguien bueno no te pongas nervioso, la unica forma de ser bueno es enfrentandote contra los mejores, y ten mente que ellos igual pueden perder, en Clash Royale igual importa el match, entonces aunque seas malo si le tienes counter al rival aunque tenga buenas medallas tienes buena posibilidad de ganer.</p>
+            <p>Este consejo igual va de la mano con el consejo 1, ya que al gastar tus gemas en grandes desafíos en lugar de emotes vas a ganar cartas y oro por cada victoria.</p>
+        </main> 
+
+        <button class="btn-hamburguesa" id="btn-menu" aria-label="Abrir recursos adicionales">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <aside class="recursos" id="menu-recursos">
+            <h2>Recursos adicionales</h2>
+            <a href="mazos.html">Mazos recomendados</a>
+        </aside>
+    </div>
+
+    <script>
+        const btnMenu = document.getElementById('btn-menu');
+        const menuRecursos = document.getElementById('menu-recursos');
+
+        btnMenu.addEventListener('click', () => {
+            btnMenu.classList.toggle('activo');
+            menuRecursos.classList.toggle('abierto');
+        });
+    </script>
+</body>
+</html>
